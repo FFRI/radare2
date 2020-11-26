@@ -1,3 +1,16 @@
+# radare2 that can parse XTA cache file
+
+This fork of radare2 contains the XTAC plugin for parsing XTA cache file that is used for caching binary translation result in Windows 10 on ARM.
+When you open an XTA cache file using this plugin, you can get some basic information about an XTA cache file and can analyze it.
+You can try some commands, such as "i", "iH", "iS", "iHj", "iSj", and go to a translated ARM64 code by seeking command.
+
+XTAC plugin is distributed under [Apache License Version 2.0](./libr/bin/format/xtac/LICENSE).
+The source code of XTAC plugin is [here](./libr/bin/format/xtac).
+
+Install and build instructions are the same as [Install / Update](#install--update).
+
+--------
+
 ```
  ____  ___  ___  ___ ____  ___   ____
 |  _ \/   \|   \/   \  _ \/ _ \ (__  \
